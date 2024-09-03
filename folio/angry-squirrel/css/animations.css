@@ -1,0 +1,41 @@
+@keyframes rotation {
+    from {
+        transform: rotate(0deg) translateX(240px) rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg) translateX(240px) rotate(-360deg);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes separator {
+    from {
+        background-image: linear-gradient(to top, #17e5d6, #17e5d6, #17e5d6, #de9c08, #ec8515);
+        /* background-image: linear-gradient(to top, #de9c08, #ec8515, #17e5d6, #17e5d6, #17e5d6); */
+        /* transform: rotate(0deg); */
+    }
+    to {
+        /* background-image: linear-gradient(to top, #de9c08, #ec8515, #17e5d6, #17e5d6, #17e5d6); */
+        /* transform: rotate(360deg); */
+    }
+}
+
+@keyframes animateGlow {
+    0% {
+        background-position: 10% 60%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 10% 50%;
+    }
+}

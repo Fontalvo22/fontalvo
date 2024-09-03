@@ -1,0 +1,185 @@
+.section-4 {
+    background-position: top center;
+    background-size: cover;
+    padding-top: 60px;
+}
+
+.text-benefits-yellow {
+    font-size: 40px;
+    margin-bottom: 10px !important;
+    font-weight: 700;
+    color: #fff900;
+}
+
+.border-cyan {
+    padding-top: 6px;
+    border-bottom: 2px solid #28e7ec;
+    width: 100%;
+}
+
+.section-4-description-container {
+    margin-bottom: 40px;
+}
+
+.utilities-container {
+    position: relative;
+}
+
+.arrow {
+    position: absolute;
+}
+
+.section-4 .swiper-button-next {
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+
+.section-4 .border-cyan {
+    margin-bottom: 10px;
+}
+
+
+/* arrows */
+
+.arrow-first {
+    top: 23%;
+    left: 25%;
+}
+
+.arrow-second {
+    top: 52%;
+    left: 15%;
+}
+
+.arrow-third {
+    bottom: 22%;
+    left: 6%;
+}
+
+.arrow-fourth {
+    bottom: 680px;
+    right: 330px;
+}
+
+.arrow-fifth {
+    right: 289px;
+    bottom: 520px;
+}
+
+
+/* benefits position*/
+
+.benefits {
+    position: absolute;
+    max-width: 440px;
+}
+
+.benefits p {
+    font-size: .9375rem;
+    margin-top: 15px;
+}
+
+.first-benefit {
+    top: 20%;
+    left: -110px;
+}
+
+.second-benefit {
+    top: 53%;
+    left: -90px;
+}
+
+.third-benefit {
+    bottom: 110px;
+}
+
+.fourth-benefit {
+    bottom: 780px;
+    right: -100px;
+}
+
+.fifth-benefit {
+    bottom: 475px;
+    right: -130px;
+}
+
+.benefits h3 {
+    font-size: 30px;
+    margin-left: 14px;
+    font-family: 'Rubik';
+    font-weight: 500;
+}
+
+.utility-item {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.utility-item-img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+@media only screen and (max-width:1399px) {
+    .benefits {
+        max-width: 360px;
+    }
+    .benefits h3 {
+        font-size: 20px;
+    }
+    .benefits img {
+        max-width: 60px;
+    }
+    .first-benefit {
+        left: 0px;
+    }
+    .second-benefit {
+        left: -30px;
+    }
+    .fourth-benefit {
+        right: -30px;
+    }
+    .fifth-benefit {
+        right: -60px;
+    }
+}
+
+@media only screen and (max-width:991px) {
+    .section-4 {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .section-4 .pt-4 {
+        padding-top: 0px !important;
+    }
+    .section-4 .col-12 {
+        padding-top: 30px !important;
+    }
+    .section-4 h2 {
+        font-size: 30px;
+    }
+    .section-4 .row.mt-4 {
+        margin-top: 0px !important;
+    }
+    .section-4 .text-color-border {
+        font-size: 38px;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .ocult-img {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:575px) {
+    .section-4 .text-color-border {
+        font-size: 30px;
+    }
+    .section-4 h2 {
+        font-size: 20px;
+    }
+}

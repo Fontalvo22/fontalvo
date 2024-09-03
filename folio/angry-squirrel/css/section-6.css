@@ -1,0 +1,83 @@
+.section-6 {
+    background-size: cover;
+    background-position: top center;
+    padding: 100px 0px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #ceb037;
+}
+
+.section-6 h2 {
+    font-weight: 700;
+    font-size: 60px;
+}
+
+.section-description {
+    margin-bottom: 50px;
+}
+
+.teammate-description-container {
+    margin-top: 10px;
+}
+
+.teammate-name {
+    font-size: 25px;
+}
+
+.teammate-description {
+    font-size: .875rem;
+}
+
+.twitter-teammate-icon {
+    max-width: 20px;
+    /* height: 20px; */
+    margin-right: 10px;
+}
+
+.section-6 a:hover {
+    text-decoration: none;
+    margin-top: -5px;
+}
+
+.section-6 a {
+    transition: .1s ease;
+}
+
+
+/* .twitter-link-container:hover a {
+    margin-top: -5px;
+} */
+
+.temmate-name {
+    font-size: 1.15rem;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width:991px) {
+    .section-6 {
+        padding: 40px 0px;
+    }
+    .section-description {
+        margin-bottom: 40px;
+    }
+    .section-6 h2 {
+        font-size: 40px;
+    }
+    .temmate-name {
+        font-size: 20px;
+    }
+    .teammate-description {
+        font-size: 0.575rem;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .section-6 .col-12 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

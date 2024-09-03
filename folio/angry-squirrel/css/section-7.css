@@ -1,0 +1,83 @@
+.section-7 h2 {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.section-7 .container {
+    padding-top: 100px;
+}
+
+.section-7 a:hover {
+    color: #000000;
+}
+
+.accordion-btn {
+    background: #fff900;
+    font-size: 1rem;
+    font-weight: 900;
+    margin-bottom: 6px;
+}
+
+.accordion-btn:hover {
+    text-decoration: none;
+}
+
+.toggle-icon {
+    display: none;
+}
+
+.toggle-icon.active {
+    display: block;
+    margin: 8px 14px 8px 8px;
+    width: 70px;
+}
+
+.card-body {
+    background-color: transparent;
+    border: 0px;
+    color: #fff;
+}
+
+@media only screen and (max-width:1200px) {
+    .section-4 .text-benefits-yellow {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width:992px) {
+    .section-7 h2 {
+        font-size: 40px;
+    }
+    .section-4 .text-benefits-yellow {
+        font-size: 20px;
+    }
+    .section-7 .section-description {
+        padding-bottom: 0px;
+        margin-bottom: 40px;
+    }
+    .section-7 .container {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .section-7 .accordion-btn {
+        padding: 6px;
+    }
+    .accordion-btn {
+        font-size: 0.7rem;
+    }
+    .toggle-icon {
+        max-width: 30px;
+    }
+    .swiper-button-next-second {
+        display: none !important;
+    }
+    .background-rotate-yellow {
+        margin-top: -60px;
+    }
+}
+
+@media only screen and (max-width:575px) {
+    .background-rotate-yellow {
+        margin-top: -10px;
+    }
+}

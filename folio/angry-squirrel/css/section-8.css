@@ -1,0 +1,45 @@
+.section-8 h2:not(.text-white) {
+    margin-top: 40px;
+    font-size: 60px;
+}
+
+.section-8 .context-text {
+    margin: 40px 0px;
+}
+
+.section-8 .context-text {
+    margin: 20px 0px;
+}
+
+.section-8 .col-12.col-md-6 {
+    margin: 10px 0px;
+}
+
+.section-8 table * {
+    color: #fff;
+}
+
+.section-8 table th,
+table td {
+    padding: 20px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.section-8 table thead {
+    background-color: #ff5500;
+}
+
+.table-container {
+    max-width: 800px;
+    overflow-x: auto;
+}
+
+table tr:nth-last-child() {
+    color: #ff7d3be8;
+}
+
+table>tbody>tr>td:nth-child(4) {
+    color: #fffd21;
+    font-weight: 700;
+}

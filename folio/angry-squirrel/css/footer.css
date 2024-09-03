@@ -1,0 +1,234 @@
+footer {
+    padding-top: 300px;
+    padding-bottom: 30px;
+    background-image: url(../images/optimized/footer-bg.webp);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+footer h3 {
+    color: #000;
+}
+
+footer h2 {
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.last-btn {
+    /* border: 2px solid #000; */
+    font-size: 1rem;
+    border-radius: 5px;
+    padding: 14px 44px;
+    border: 2px solid #fff;
+    font-weight: 700;
+    transition: ease 0.2s;
+}
+
+.last-btn:hover {
+    text-decoration: none;
+    background-color: #000;
+    border-color: transparent;
+}
+
+.footer-cell-container {
+    height: 100%;
+    padding: 20px;
+    border-bottom: 0px;
+}
+
+.footer-cell-container.left {
+    border-left: 0px;
+    border-top: 0px;
+    padding-left: 0px;
+}
+
+footer .special-link-btn {
+    color: #252125;
+    font-size: 1rem;
+    padding: 14px 44px;
+    display: block;
+    width: 100%;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+footer .special-link-btn:hover {
+    text-decoration: none;
+}
+
+footer .medium-text {
+    font-weight: 700;
+}
+
+.bunny-icon {
+    margin-right: 20px;
+}
+
+.footer-cell-container.rigth {
+    border-right: 0px;
+    border-top: 0px;
+    padding-right: 0px;
+}
+
+.angry-title-footer-container h3 {
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.footer-btn {
+    border: 4px solid #000;
+    background: transparent;
+    padding: 2px 30px;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.footer-description {
+    font-size: 25px;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.icon-container {
+    border: 1px solid #414954;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.twitter-icon-container {
+    border-left: 0px;
+    border-right: 0px;
+}
+
+.ig-icon-container {
+    border-right: 0px;
+    border-left: 0px;
+}
+
+.icon-container {
+    border-top: 0px;
+    border-bottom: 0px;
+    cursor: pointer;
+}
+
+.discord-icon-container {
+    border-right: 0px;
+}
+
+@media only screen and (min-width: 1999px) {
+    footer {
+        padding-top: 400px !important;
+        padding-bottom: 190px !important;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .medium-text {
+        font-size: 13px;
+    }
+    .alternative-btn {
+        padding: 22px 34px;
+        font-size: 0.7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center !important;
+    }
+    .alternative-btn img,
+    .last-btn img {
+        max-width: 30px;
+        margin-right: 10px;
+    }
+    .last-btn {
+        display: flex;
+        align-items: center;
+        font-size: 0.7rem;
+    }
+    .icon-container img {
+        max-width: 20px;
+    }
+    footer h2 {
+        font-size: 40px;
+    }
+    footer {
+        padding-top: 220px;
+        padding-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    footer {
+        padding-top: 150px;
+        padding-bottom: 30px;
+    }
+    .angry-title-footer-container h3 {
+        font-size: 20px !important;
+    }
+    .footer-description {
+        font-size: 13px !important;
+    }
+    .footer-btns-container {
+        flex-direction: column;
+    }
+    .last-btn {
+        margin-top: 30px;
+    }
+    footer .special-link-btn {
+        font-size: 0.7rem;
+        padding: 14px 44px;
+    }
+    .bunny-icon {
+        max-width: 20px;
+    }
+}
+
+@media only screen and (max-width:768px) {}
+
+@media only screen and (max-width:767px) {
+    .footer-cell-container {
+        border: 0px;
+    }
+    /* footer {
+        padding-top: 0px;
+    } */
+    .last-btn {
+        display: flex;
+        justify-content: center;
+    }
+    .footer-cell-container {
+        height: auto;
+        margin-bottom: 20px !important;
+    }
+    .footer-cell-container.left {
+        margin-bottom: 40px;
+        text-align: center;
+        padding-right: 0px;
+    }
+    .footer-cell-container.rigth {
+        text-align: center;
+        padding-left: 0px;
+    }
+}
+
+@media only screen and (max-width:630px) {
+    footer {
+        background-position: center center;
+        /* padding: 0px 20px; */
+    }
+    footer h2 {
+        font-size: 30px;
+    }
+    .footer-logo {
+        max-width: 150px;
+    }
+}
+
+@media only screen and (max-width:380px) {
+    footer .justify-content-end {
+        justify-content: center !important;
+    }
+}
