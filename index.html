@@ -22,856 +22,6 @@
         <link rel="stylesheet" href="assets/css/loader.css" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js" integrity="sha512-Kef5sc7gfTacR7TZKelcrRs15ipf7+t+n7Zh6mKNJbmW+/RRdCW9nwfLn4YX0s2nO6Kv5Y2ChqgIakaC6PW09A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <!-- recordar que aquí está el preloader -->
-        <!-- <style>
-            @charset "UTF-8";
-            @font-face {
-                font-family: simple-line-icons;
-                src: url('https://franklinfontalvo.com/assets/fonts/Simple-Line-Icons.eot?v=2.4.0');
-                src: url('https://franklinfontalvo.com/assets/fonts/Simple-Line-Icons.eot?v=2.4.0#iefix') format('embedded-opentype'), url('https://franklinfontalvo.com/assets/fonts/Simple-Line-Icons.woff2?v=2.4.0') format('woff2'), url('https://franklinfontalvo.com/assets/fonts/Simple-Line-Icons.ttf?v=2.4.0') format('truetype'), url('https://franklinfontalvo.com/assets/fonts/Simple-Line-Icons.woff?v=2.4.0') format('woff'), url('https://franklinfontalvo.com/assets/fonts/Simple-Line-Icons.svg?v=2.4.0#simple-line-icons') format('svg');
-                font-weight: 400;
-                font-style: normal;
-            }
-            :root {
-                --blue: #007bff;
-                --indigo: #6610f2;
-                --purple: #6f42c1;
-                --pink: #e83e8c;
-                --red: #dc3545;
-                --orange: #fd7e14;
-                --yellow: #ffc107;
-                --green: #28a745;
-                --teal: #20c997;
-                --cyan: #17a2b8;
-                --white: #fff;
-                --gray: #6c757d;
-                --gray-dark: #343a40;
-                --primary: #007bff;
-                --secondary: #6c757d;
-                --success: #28a745;
-                --info: #17a2b8;
-                --warning: #ffc107;
-                --danger: #dc3545;
-                --light: #f8f9fa;
-                --dark: #343a40;
-                --breakpoint-xs: 0;
-                --breakpoint-sm: 576px;
-                --breakpoint-md: 768px;
-                --breakpoint-lg: 992px;
-                --breakpoint-xl: 1200px;
-                --font-family-sans-serif: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-                --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
-            }
-            *,
-            ::after,
-            ::before {
-                box-sizing: border-box;
-            }
-            html {
-                font-family: sans-serif;
-                line-height: 1.15;
-                -webkit-text-size-adjust: 100%;
-            }
-            header,
-            main,
-            nav,
-            section {
-                display: block;
-            }
-            body {
-                margin: 0;
-                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-                font-size: 1rem;
-                font-weight: 400;
-                line-height: 1.5;
-                color: #212529;
-                text-align: left;
-                background-color: #fff;
-            }
-            h1 {
-                margin-top: 0;
-                margin-bottom: 0.5rem;
-            }
-            ul {
-                margin-top: 0;
-                margin-bottom: 1rem;
-            }
-            a {
-                color: #007bff;
-                text-decoration: none;
-                background-color: transparent;
-            }
-            img {
-                vertical-align: middle;
-                border-style: none;
-            }
-            svg {
-                overflow: hidden;
-                vertical-align: middle;
-            }
-            button {
-                border-radius: 0;
-            }
-            button {
-                margin: 0;
-                font-family: inherit;
-                font-size: inherit;
-                line-height: inherit;
-            }
-            button {
-                overflow: visible;
-            }
-            button {
-                text-transform: none;
-            }
-            button {
-                -webkit-appearance: button;
-            }
-            button::-moz-focus-inner {
-                padding: 0;
-                border-style: none;
-            }
-            ::-webkit-file-upload-button {
-                font: inherit;
-                -webkit-appearance: button;
-            }
-            h1 {
-                margin-bottom: 0.5rem;
-                font-family: inherit;
-                font-weight: 500;
-                line-height: 1.2;
-                color: inherit;
-            }
-            h1 {
-                font-size: 2.5rem;
-            }
-            .list-inline {
-                padding-left: 0;
-                list-style: none;
-            }
-            .list-inline-item {
-                display: inline-block;
-            }
-            .list-inline-item:not(:last-child) {
-                margin-right: 0.5rem;
-            }
-            .img-fluid {
-                max-width: 100%;
-                height: auto;
-            }
-            .container {
-                width: 100%;
-                padding-right: 15px;
-                padding-left: 15px;
-                margin-right: auto;
-                margin-left: auto;
-            }
-            @media (min-width: 576px) {
-                .container {
-                    max-width: 540px;
-                }
-            }
-            @media (min-width: 768px) {
-                .container {
-                    max-width: 720px;
-                }
-            }
-            @media (min-width: 992px) {
-                .container {
-                    max-width: 960px;
-                }
-            }
-            @media (min-width: 1200px) {
-                .container {
-                    max-width: 1140px;
-                }
-                .container {
-                    max-width: 920px;
-                }
-            }
-            .btn {
-                display: inline-block;
-                font-weight: 400;
-                color: #212529;
-                text-align: center;
-                vertical-align: middle;
-                background-color: transparent;
-                border: 1px solid transparent;
-                padding: 0.375rem 0.75rem;
-                font-size: 1rem;
-                line-height: 1.5;
-                border-radius: 0.25rem;
-            }
-            .d-flex {
-                display: -ms-flexbox !important;
-                display: flex !important;
-            }
-            .d-inline-flex {
-                display: -ms-inline-flexbox !important;
-                display: inline-flex !important;
-            }
-            @media (min-width: 768px) {
-                .d-md-none {
-                    display: none !important;
-                }
-            }
-            @media (min-width: 992px) {
-                .d-lg-none {
-                    display: none !important;
-                }
-            }
-            .flex-column {
-                -ms-flex-direction: column !important;
-                flex-direction: column !important;
-            }
-            .justify-content-center {
-                -ms-flex-pack: center !important;
-                justify-content: center !important;
-            }
-            .justify-content-between {
-                -ms-flex-pack: justify !important;
-                justify-content: space-between !important;
-            }
-            .align-items-start {
-                -ms-flex-align: start !important;
-                align-items: flex-start !important;
-            }
-            .align-items-center {
-                -ms-flex-align: center !important;
-                align-items: center !important;
-            }
-            .w-100 {
-                width: 100% !important;
-            }
-            .mt-0 {
-                margin-top: 0 !important;
-            }
-            .mb-0 {
-                margin-bottom: 0 !important;
-            }
-            .mb-2 {
-                margin-bottom: 0.5rem !important;
-            }
-            .ml-2 {
-                margin-left: 0.5rem !important;
-            }
-            .mt-4 {
-                margin-top: 1.5rem !important;
-            }
-            .mr-4 {
-                margin-right: 1.5rem !important;
-            }
-            .icon-briefcase,
-            .icon-bubbles,
-            .icon-graduation,
-            .icon-home,
-            .icon-layers,
-            .icon-note,
-            .icon-user-following {
-                font-family: simple-line-icons;
-                speak: none;
-                font-style: normal;
-                font-weight: 400;
-                font-variant: normal;
-                text-transform: none;
-                line-height: 1;
-                -webkit-font-smoothing: antialiased;
-                -moz-osx-font-smoothing: grayscale;
-            }
-            .icon-user-following:before {
-                content: '\e003';
-            }
-            .icon-layers:before {
-                content: '\e034';
-            }
-            .icon-graduation:before {
-                content: '\e019';
-            }
-            .icon-bubbles:before {
-                content: '\e04a';
-            }
-            .icon-briefcase:before {
-                content: '\e04b';
-            }
-            .icon-note:before {
-                content: '\e060';
-            }
-            .icon-home:before {
-                content: '\e069';
-            }
-            button::-moz-focus-inner {
-                padding: 0;
-                border: 0;
-            }
-            body,
-            h1 {
-                color: var(--primary);
-            }
-            .btn,
-            body,
-            h1 {
-                font-family: Montserrat, sans-serif;
-            }
-            .btn {
-                overflow: hidden;
-            }
-            :root {
-                --primary: #0c142d;
-                --blue: #007bff;
-                --blu-ligth: #00d6d6;
-                --green: #00ff80;
-                --red: #ff6b6b;
-                --white: #e8e8e8;
-            }
-            * {
-                margin: 0;
-                padding: 0;
-            }
-            html {
-                margin: 0 !important;
-                overflow: auto !important;
-            }
-            body {
-                background-color: #f9f9ff;
-                font-size: 16px;
-                line-height: 1.7;
-                overflow-x: hidden;
-                -webkit-font-smoothing: antialiased;
-                -moz-osx-font-smoothing: grayscale;
-            }
-            img {
-                max-width: 100%;
-                height: auto;
-            }
-            h1 {
-                font-weight: 700;
-                margin: 20px 0;
-            }
-            h1 {
-                font-size: 36px;
-            }
-            a {
-                color: var(--red);
-                outline: 0;
-            }
-            .parallax .layer {
-                position: absolute;
-            }
-            header.desktop-header-1 {
-                border-right: 1px solid rgba(255, 255, 255, 0.1);
-                overflow-y: auto;
-                overflow-x: hidden;
-                height: 100vh;
-                z-index: 1;
-                min-height: 100vh;
-            }
-            header.desktop-header-1,
-            header.mobile-header-1 {
-                background: var(--primary);
-                top: 0;
-                position: fixed;
-            }
-            header.desktop-header-1 {
-                color: #fff;
-                padding: 50px 40px 40px;
-                left: 0;
-                width: 220px;
-                -webkit-transform: translateX(0);
-                -moz-transform: translateX(0);
-                -ms-transform: translateX(0);
-                -o-transform: translateX(0);
-                transform: translateX(0);
-            }
-            header.desktop-header-1 .vertical-menu {
-                list-style: none;
-                padding: 0;
-                margin-bottom: 130px;
-                margin-top: 130px;
-            }
-            header.desktop-header-1 .vertical-menu li {
-                padding: 8px 0;
-                position: relative;
-                list-style: none;
-            }
-            header.desktop-header-1 .vertical-menu li i {
-                color: #fff;
-                margin-right: 20px;
-            }
-            header.desktop-header-1 .vertical-menu li a {
-                color: #fff;
-                font-family: Montserrat, sans-serif;
-                font-size: 16px;
-                font-weight: 700;
-                width: 100%;
-                text-decoration: none;
-                position: relative;
-            }
-            section.home .social-icons li a {
-                color: #fff;
-            }
-            header.desktop-header-1 .footer {
-                margin-top: auto;
-            }
-            header.desktop-header-1 .copyright {
-                color: #9c9ab3;
-                font-size: 13px;
-            }
-            header.mobile-header-1 {
-                padding: 10px 0;
-            }
-            header.mobile-header-1 {
-                display: none;
-                z-index: 10;
-                width: 100%;
-                border-bottom: 0.5px solid #fff;
-            }
-            .menu-icon button,
-            header.desktop-header-1 .menu-icon button,
-            header.mobile-header-1 .menu-icon button {
-                background: 0 0;
-                border: 0;
-                outline: 0;
-                height: 33px;
-                width: 33px;
-            }
-            header.mobile-header-1 .menu-icon span {
-                display: block;
-                background: #fff;
-                border-radius: 5px;
-                height: 4px;
-                position: relative;
-                width: 30px;
-            }
-            header.mobile-header-1 .menu-icon span:before {
-                content: '';
-                display: block;
-                background: #fff;
-                border-radius: 5px;
-                height: 4px;
-                top: -10px;
-                position: absolute;
-                width: 30px;
-            }
-            header.mobile-header-1 .menu-icon span:after {
-                content: '';
-                display: block;
-                background: #fff;
-                border-radius: 5px;
-                height: 4px;
-                top: 10px;
-                position: absolute;
-                width: 30px;
-            }
-            section.home {
-                background: var(--primary);
-            }
-            header.mobile-header-1 .site-logo {
-                display: inline-block;
-            }
-            header.mobile-header-1 .site-logo img {
-                max-height: 30px;
-            }
-            main.content {
-                margin-left: 220px;
-            }
-            section {
-                padding-top: 110px;
-                position: relative;
-            }
-            section.home {
-                padding: 0;
-                height: 100vh;
-                min-height: 100vh;
-            }
-            section.home .intro {
-                margin: auto;
-                max-width: 640px;
-                text-align: center;
-                position: relative;
-                z-index: 1;
-            }
-            section.home .intro h1 {
-                color: #fff;
-                font-size: 50px;
-                font-family: Montserrat, sans-serif;
-            }
-            section.home .intro span {
-                color: #fff;
-                font-size: 30px;
-            }
-            .parallax {
-                position: absolute;
-                left: 0;
-                top: 0;
-                height: 100%;
-                width: 100%;
-            }
-            .parallax .p1 {
-                left: 10%;
-                top: 10%;
-            }
-            .parallax .p2 {
-                left: 25%;
-                top: 30%;
-            }
-            .parallax .p3 {
-                left: 15%;
-                bottom: 30%;
-            }
-            .parallax .p4 {
-                left: 10%;
-                bottom: 10%;
-            }
-            .parallax .p5 {
-                left: 45%;
-                top: 10%;
-            }
-            .parallax .p6 {
-                left: 40%;
-                bottom: 10%;
-            }
-            .parallax .p7 {
-                top: 20%;
-                right: 30%;
-            }
-            .parallax .p8 {
-                right: 30%;
-                bottom: 20%;
-            }
-            .parallax .p9 {
-                right: 10%;
-                top: 10%;
-            }
-            .parallax .p10 {
-                top: 45%;
-                right: 10%;
-            }
-            .parallax .p11 {
-                bottom: 10%;
-                right: 10%;
-            }
-            .btn-default {
-                background: var(--red);
-            }
-            .spacer {
-                clear: both;
-            }
-            .btn {
-                border-radius: 10px;
-                font-size: 16px;
-                font-weight: 700;
-                line-height: 1;
-                padding: 20px 30px;
-                position: relative;
-            }
-            .btn-default {
-                color: #fff;
-                display: inline-block;
-                vertical-align: middle;
-                position: relative;
-                -webkit-transform: perspective(1px) translateZ(0);
-                transform: perspective(1px) translateZ(0);
-                box-shadow: 0 0 1px transparent;
-                font-family: Montserrat, sans-serif;
-            }
-            .social-icons li:not(:last-child) {
-                margin-right: 1.5rem;
-            }
-            .social-icons li a {
-                font-size: 21px;
-            }
-            #return-to-top {
-                position: fixed;
-                bottom: 25px;
-                right: 25px;
-                background: rgba(0, 0, 0, 0.2);
-                width: 40px;
-                height: 40px;
-                text-decoration: none;
-                -webkit-border-radius: 0;
-                -moz-border-radius: 0;
-                border-radius: 100%;
-                display: none;
-                z-index: 4;
-            }
-            #return-to-top i {
-                color: #fff;
-                margin: 0;
-                position: relative;
-                left: 13px;
-                top: 8px;
-                font-size: 16px;
-                -webkit-transform: translateY(0);
-                -moz-transform: translateY(0);
-                -ms-transform: translateY(0);
-                transform: translateY(0);
-            }
-            @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-                body,
-                html {
-                    width: 100%;
-                    overflow-x: hidden;
-                }
-            }
-            @media only screen and (max-width: 991px) {
-                header.desktop-header-1 {
-                    -webkit-transform: translateX(-290px);
-                    -moz-transform: translateX(-290px);
-                    -ms-transform: translateX(-290px);
-                    -o-transform: translateX(-290px);
-                    transform: translateX(-290px);
-                }
-                header.mobile-header-1 {
-                    display: block;
-                }
-                main.content {
-                    margin-left: 0;
-                }
-            }
-            @media only screen and (max-width: 768px) {
-                section.home {
-                    padding: 300px 0;
-                }
-            }
-            @media only screen and (min-width: 768px) {
-                .container {
-                    max-width: 920px;
-                }
-            }
-            @media only screen and (max-width: 576px) {
-                .parallax .p1 {
-                    left: 10%;
-                    top: 10%;
-                }
-                .parallax .p2 {
-                    left: 15%;
-                    top: 30%;
-                }
-                .parallax .p3 {
-                    left: 10%;
-                    bottom: 30%;
-                }
-                .parallax .p4 {
-                    left: 10%;
-                    bottom: 10%;
-                }
-                .parallax .p5 {
-                    left: 45%;
-                    top: 3%;
-                }
-                .parallax .p6 {
-                    left: 40%;
-                    bottom: 10%;
-                }
-                .parallax .p7 {
-                    top: 20%;
-                    right: 30%;
-                }
-                .parallax .p8 {
-                    right: 30%;
-                    bottom: 20%;
-                }
-                .parallax .p9 {
-                    right: 10%;
-                    top: 5%;
-                }
-                .parallax .p10 {
-                    top: 45%;
-                    right: 10%;
-                }
-                .parallax .p11 {
-                    bottom: 10%;
-                    right: 10%;
-                }
-            }
-            header.desktop-header-1 .menu-icon span {
-                background: #fff;
-                border-radius: 5px;
-                height: 4px;
-                position: relative;
-                width: 30px;
-            }
-            header.desktop-header-1 .menu-icon span:before {
-                content: '';
-                display: block;
-                background: #fff;
-                border-radius: 5px;
-                height: 4px;
-                position: absolute;
-                width: 30px;
-                rotate: 50deg;
-                top: 0;
-            }
-            header.desktop-header-1 .menu-icon span:after {
-                content: '';
-                display: block;
-                background: #fff;
-                border-radius: 5px;
-                height: 4px;
-                position: absolute;
-                width: 30px;
-                rotate: -50deg;
-                top: 0;
-            }
-            .btn-inactive {
-                transform: scale(0);
-            }
-            svg {
-                transform: scale(2);
-            }
-            
-            .loader {
-                scale: 3;
-                height: 50px;
-                width: 40px;
-            }
-            .box {
-                position: relative;
-                opacity: 0;
-                left: 10px;
-            }
-            .side-left {
-                position: absolute;
-                background-color: #286cb5;
-                width: 19px;
-                height: 5px;
-                transform: skew(0deg, -25deg);
-                top: 14px;
-                left: 10px;
-            }
-            .side-right {
-                position: absolute;
-                background-color: #2f85e0;
-                width: 19px;
-                height: 5px;
-                transform: skew(0deg, 25deg);
-                top: 14px;
-                left: -9px;
-            }
-            .side-top {
-                position: absolute;
-                background-color: #5fa8f5;
-                width: 20px;
-                height: 20px;
-                rotate: 45deg;
-                transform: skew(-20deg, -20deg);
-            }
-            .box-1 {
-                animation: 4s infinite from-left;
-            }
-            .box-1 .side-top {
-                background-color: #ff6b6b;
-            }
-            .box-1 .side-left,
-            .box-1 .side-right {
-                background-color: #cc5656;
-            }
-            .box-2 {
-                animation: 4s infinite from-right;
-                animation-delay: 1s;
-            }
-            .box-2 .side-top {
-                background-color: #00ff80;
-            }
-            .box-2 .side-left,
-            .box-2 .side-right {
-                background-color: #0c6;
-            }
-            .box-3 {
-                animation: 4s infinite from-left;
-                animation-delay: 2s;
-            }
-            .box-3 .side-top {
-                background-color: #00d6d6;
-            }
-            .box-3 .side-left,
-            .box-3 .side-right {
-                background-color: #00a8a8;
-            }
-            .box-4 {
-                animation: 4s infinite from-right;
-                animation-delay: 3s;
-            }
-            .box-4 .side-top {
-                background-color: #007bff;
-            }
-            .box-4 .side-left,
-            .box-4 .side-right {
-                background-color: #0051a3;
-            }
-            @keyframes from-left {
-                0% {
-                    z-index: 20;
-                    opacity: 0;
-                    translate: -20px -6px;
-                }
-                20% {
-                    z-index: 10;
-                    opacity: 1;
-                    translate: 0px 0px;
-                }
-                40% {
-                    z-index: 9;
-                    translate: 0px 4px;
-                }
-                60% {
-                    z-index: 8;
-                    translate: 0px 8px;
-                }
-                80% {
-                    z-index: 7;
-                    opacity: 1;
-                    translate: 0px 12px;
-                }
-                100% {
-                    z-index: 5;
-                    translate: 0px 30px;
-                    opacity: 0;
-                }
-            }
-            @keyframes from-right {
-                0% {
-                    z-index: 20;
-                    opacity: 0;
-                    translate: 20px -6px;
-                }
-                20% {
-                    z-index: 10;
-                    opacity: 1;
-                    translate: 0px 0px;
-                }
-                40% {
-                    z-index: 9;
-                    translate: 0px 4px;
-                }
-                60% {
-                    z-index: 8;
-                    translate: 0px 8px;
-                }
-                80% {
-                    z-index: 7;
-                    opacity: 1;
-                    translate: 0px 12px;
-                }
-                100% {
-                    z-index: 5;
-                    translate: 0px 30px;
-                    opacity: 0;
-                }
-            }
-            :root {
-                --swiper-theme-color: #007aff;
-            }
-            :host {
-                position: relative;
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                z-index: 1;
-            }
-            :root {
-                --swiper-navigation-size: 44px;
-            }
-        </style> -->
 
         <style>
             .skill-badge btn btn-default w-fit-content d-flex btn-active {
@@ -1021,7 +171,7 @@
                         </ul>
                         <!-- buttons -->
                         <div class="mt-4">
-                            <a href="assets/curriculum-fontalvo.pdf" id="btn-activator" class="btn btn-default" download="CV Franklin Fontalvo">
+                            <a href="assets/curriculum-fontalvo.pdf" class="btn btn-default" download="CV Franklin Fontalvo">
                                 Download CV
                                 <!-- <img src="./assets/images/file.png" alt="" style="width: 20px;" class="img-fluid ml-2"> -->
                                 <!-- <i class="fas fa-file-download"></i> -->
@@ -1143,43 +293,6 @@
                                             </div> -->
                                         <div class="spacer d-md-none d-lg-none" data-height="30"></div>
                                     </div>
-                                    <!-- <div class="col-md-12">
-                                        <div class="skill-item">
-                                        	<div class="skill-info clearfix">
-                                        		<h4 class="float-left mb-3 mt-0">Frontend</h4>
-                                        		<span class="float-right">90%</span>
-                                        	</div>
-                                        	<div class="progress">
-                                        		<div class="progress-bar data-background" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="90" data-color="var(--blue)">
-                                        		</div>
-                                        	</div>
-                                        	<div class="spacer" data-height="20"></div>
-                                        </div>
-                                        
-                                        <div class="skill-item">
-                                        	<div class="skill-info clearfix">
-                                        		<h4 class="float-left mb-3 mt-0">Backend</h4>
-                                        		<span class="float-right">70%</span>
-                                        	</div>
-                                        	<div class="progress">
-                                        		<div class="progress-bar data-background" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="70" data-color="#FF4C60">
-                                        		</div>
-                                        	</div>
-                                        	<div class="spacer" data-height="20"></div>
-                                        </div>
-                                        
-                                        
-                                        <div class="skill-item">
-                                        	<div class="skill-info clearfix">
-                                        		<h4 class="float-left mb-3 mt-0">Mobile</h4>
-                                        		<span class="float-right">50%</span>
-                                        	</div>
-                                        	<div class="progress">
-                                        		<div class="progress-bar data-background" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" data-color="#6C6CE5">
-                                        		</div>
-                                        	</div>
-                                        </div>
-                                        </div> -->
                                 </div>
                             </div>
                         </div>
@@ -1266,7 +379,6 @@
                         <h2 class="section-title wow fadeInUp">Studies and experiences</h2>
                         <!-- <a href="https://platzi.com/p/Fontalvo22/" target="_blank" class="btn btn-default">View my courses</a> -->
                     </div>
-                    <div class="spacer" data-height="60"></div>
                     <div class="row">
                         <div class="col-md-6">
                             <!-- timeline wrapper -->
@@ -1274,7 +386,7 @@
                                 <!-- timeline item -->
                                 <div class="timeline-container wow fadeInUp">
                                     <div class="content">
-                                        <span class="time">2022 - Present</span>
+                                        <span class="time">2022 - 2025</span>
                                         <h3 class="title">Computer engineering</h3>
                                         <p>I am currently studying to obtain my degree in computer engineering, I learn while I teach since I have had the opportunity to prepare new students.</p>
                                     </div>
@@ -1282,7 +394,7 @@
                                 <!-- timeline item -->
                                 <div class="timeline-container wow fadeInUp" data-wow-delay="0.2s">
                                     <div class="content">
-                                        <span class="time">2019 - 2021</span>
+                                        <span class="time">2019 - 2022</span>
                                         <h3 class="title">TSU in computer science</h3>
                                         <p>Graduated from TSU in computer science after presenting a project for social media management for a marketing agency.</p>
                                     </div>
@@ -1307,10 +419,10 @@
                                 <!-- timeline item -->
                                 <div class="timeline-container wow fadeInUp" data-wow-delay="0.4s">
                                     <div class="content">
-                                        <span class="time">2023 - present</span>
-                                        <h3 class="title">Back End Developer</h3>
+                                        <span class="time">Nov 2023 - present</span>
+                                        <h3 class="title">Backend developer / team lead</h3>
                                         <h6 class="my-0 mini-subtitle">Maxxed technical systems</h6>
-                                        <p>Decided on technology stacks for projects. Led a team to deliver client projects. Designed databases. Brought many projects into production</p>
+                                        <p>I led projects, designed relational databases, configured servers and managed deployments on AWS and VPS. Implemented CI/CD pipelines with Docker and Jenkins.</p>
                                     </div>
                                 </div>
                                 <div class="timeline-container wow fadeInUp" data-wow-delay="0.2s">
@@ -1318,9 +430,19 @@
                                         <span class="time">2021 - 2023</span>
                                         <h3 class="title">Full stack web developer</h3>
                                         <h6 class="my-0 mini-subtitle">Digitek LLC</h6>
-                                        <p>I led the creation of a tool for the internal management of the company's courses, reducing the time to complete the task by 92% I worked in a team to create the PHP system.</p>
+                                        <p>I created a tool that reduced administrative tasks by 92%, optimized web interfaces improving Google Page Speed to 98% and led an app for automatic backups in S3.</p>
                                     </div>
                                 </div>
+
+                                <div class="timeline-container wow fadeInUp" data-wow-delay="0.2s">
+                                    <div class="content">
+                                        <span class="time">October 2018 - July 2019</span>
+                                        <h3 class="title">Computer Club Teacher Assistant</h3>
+                                        <h6 class="my-0 mini-subtitle">Liceo Nacional Don Rómulo gallegos</h6>
+                                        <p>I helped teach programming and led the creation of a student grade tracking app with PHP, JavaScript and MySQL.</p>
+                                    </div>
+                                </div>
+
                                 <!-- main line -->
                                 <span class="line"></span>
                             </div>
@@ -1332,7 +454,7 @@
                 <div class="container">
                     <!-- section title -->
                     <h2 class="section-title wow fadeInUp">Some projects</h2>
-                    <div class="spacer" data-height="60"></div>
+                    <!-- <div class="spacer" data-height="60"></div> -->
                     <!-- portfolio filter (desktop) -->
                     <!-- <ul class="portfolio-filter list-inline wow fadeInUp my-3" style="display: block !important;">
                         <li class="current list-inline-item" data-filter="*">All</li>
@@ -1517,23 +639,22 @@
                 <div class="container">
                     <!-- section title -->
                     <h2 class="section-title wow fadeInUp">How can I help you?</h2>
-                    <div class="spacer" data-height="60"></div>
                     <div class="row">
                         <div class="col-md-4 py-3">
                             <!-- service box -->
-                            <div class="service-box h-100 rounded data-background padding-30 text-center text-light shadow-blue" data-color="#6C6CE5">
+                            <div class="service-box h-100 rounded data-background padding-30 text-center text-light shadow-blue" data-color="#191919">
                                 <!-- <img src="./assets/images/icons/brand-react-native.png" alt="Frontend Development" /> -->
-                                <h3 class="mb-3 mt-0">Frontend Development</h3>
-                                <p class="mb-0">Deep knowledge of frontend development technologies and frameworks</p>
+                                <h3 class="mb-3 mt-0">Infrastructure solutions</h3>
+                                <p class="mb-0">Design and management of robust and scalable infrastructures using leading tools and platforms such as AWS and Terraform.</p>
                             </div>
                             <div class="spacer d-md-none d-lg-none" data-height="30"></div>
                         </div>
                         <div class="col-md-4 py-3">
                             <!-- service box -->
-                            <div class="service-box h-100 rounded data-background padding-30 text-center shadow-yellow" data-color="#00d6d6">
+                            <div class="service-box h-100 rounded data-background padding-30 text-center shadow-yellow" data-color="#310D52">
                                 <!-- <img src="https://via.placeholder.com/80x80" alt="Backend Development" /> -->
-                                <h3 class="mb-3 mt-0">Backend Development</h3>
-                                <p class="mb-0">Passionate about building the core of web applications with robust and scalable solutions.</p>
+                                <h3 class="mb-3 mt-0 text-white">Backend Development</h3>
+                                <p class="mb-0 text-white">Passionate about building the core of web applications with robust and scalable solutions.</p>
                             </div>
                             <div class="spacer d-md-none d-lg-none" data-height="30"></div>
                         </div>
@@ -1560,6 +681,7 @@
                     margin: 0px 2px;
                     border-radius: 5px;
                     font-weight: normal;
+                    border: 0px !important;
                 }
                 #skills .skill-badge:nth-child(3n + 1) {
                     background-color: var(--primary);
@@ -1629,7 +751,7 @@
                 <div class="container">
                     <!-- section title -->
                     <h2 class="section-title wow fadeInUp">Personal references</h2>
-                    <div class="spacer" data-height="60"></div>
+                    <!-- <div class="spacer" data-height="60"></div> -->
                     <div class="testimonials" style="overflow-x: hidden">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide mb-4">

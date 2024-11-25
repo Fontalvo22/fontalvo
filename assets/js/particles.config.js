@@ -4,10 +4,10 @@ particlesJS(
     {
         particles: {
             number: {
-                value: 150,
+                value: 500,
                 density: {
                     enable: true,
-                    value_area: 786,
+                    value_area: 1000,
                 },
             },
             color: {

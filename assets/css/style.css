@@ -5,7 +5,7 @@
   --blu-ligth:#00d6d6;
   --green:#00ff80;
   --red:#9800CA;
-
+  --purple-dark: #310D52;
   --white: #E8E8E8;
 }
 
@@ -806,7 +806,7 @@ main.content-2.open {
 }
 
 section {
-  padding-top: 110px;
+  padding-top: 80px;
   position: relative;
 }
 
@@ -1195,7 +1195,7 @@ select.portfolio-filter-mobile {
 }
 .testimonial-item .subtitle {
   /* color: #8B88B1; */
-  color: var(--blue);
+  color: var(--red);
   font-size: 14px;
 }
 .testimonial-item p {
@@ -1567,6 +1567,8 @@ body.dark footer.footer {
 }
 .btn-default {
   color: #FFF;
+  border: 2px solid var(--red);
+
   background: var(--red);
   display: inline-block;
   vertical-align: middle;
@@ -1579,7 +1581,8 @@ body.dark footer.footer {
   transition: ease 0.5s;
 }
 .btn-default:hover {
-  background-color: rgba(0,214,214,1);
+  background-color: #fff;
+  border: 2px solid var(--red);
   /* backgroundrgba(0,214,214,1): linear-gradient(130deg, rgba(255,107,107,1) 25%, rgba(0,214,214,1) 76%); */
   color: var(--primary);
   /* color: #FFF;
@@ -1795,7 +1798,7 @@ body.dark footer.footer {
 
 .timeline .timeline-container {
   padding-left: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   position: relative;
   background-color: inherit;
   width: 100%;
@@ -1930,19 +1933,19 @@ body.dark footer.footer {
 .shadow-blue {
   -webkit-box-shadow: 0px 5px 20px 0px rgba(108, 108, 229, 0.5);
   -moz-box-shadow: 0px 5px 20px 0px rgba(108, 108, 229, 0.5);
-  box-shadow: 0px 5px 20px 0px rgba(108, 108, 229, 0.5);
+  box-shadow: 0px 5px 20px 0px var(--primary);
 }
 
 .shadow-pink {
   -webkit-box-shadow: 0px 5px 20px 0px rgba(249, 123, 139, 0.5);
   -moz-box-shadow: 0px 5px 20px 0px rgba(249, 123, 139, 0.5);
-  box-shadow: 0px 5px 20px 0px rgba(249, 123, 139, 0.5);
+  box-shadow: 0px 5px 20px 0px var(--red);
 }
 
 .shadow-yellow {
   -webkit-box-shadow: 0px 5px 20px 0px #00d6d6;
   -moz-box-shadow: 0px 5px 20px 0px #00d6d6;
-  box-shadow: 0px 5px 20px 0px #00d6d6;
+  box-shadow: 0px 5px 20px 0px var(--purple-dark);
 }
 
 .padding-30 {
@@ -2567,3 +2570,8 @@ header.desktop-header-1 .menu-icon span:after {
     transform: scale(2);
   }
 
+  #facts > div {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px;
+  }
