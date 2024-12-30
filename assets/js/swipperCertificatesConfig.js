@@ -28,7 +28,7 @@ const swipperConfig = {
 
 const swipperConfigSecond = {
     spaceBetween: 20,
-    loop: true,
+    // loop: true,
     autoplay: {
         // delay: 100,
         pauseOnMouseEnter: true,
