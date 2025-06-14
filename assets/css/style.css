@@ -1632,6 +1632,31 @@ body.dark footer.footer {
     line-height: 0;
 }
 
+.btn.btn-secondary{
+    color: #fff;
+    background-color: var(--blu-ligth);
+    border:2px solid var(--blu-ligth);
+    
+}
+.btn.btn-primary{
+    color: #fff;
+    background-color: var(--violet-purple);
+    border:2px solid var(--violet-purple);
+}
+
+.btn.btn-primary:hover{
+    color: var(--violet-purple);
+    background-color: #fff;
+    border-color: var(--violet-purple);
+}
+
+.btn.btn-secondary:hover {
+    color: var(--violet-purple);
+
+    background-color: #fff;
+    border-color: var(--violet-purple);
+}
+
 .btn-xs {
     padding: 12px 10px;
     font-size: 12px;
@@ -2629,8 +2654,21 @@ svg {
     width: 100%;
     height: 200px;
     object-fit: cover;
+    object-position: top;
 }
 
 .timeline .timeline-container {
     padding-left: 20px;
+}
+
+span.badge:nth-child(3n + 1){
+    background-color: var(--primary) !important;
+}
+
+span.badge:nth-child(3n + 2){
+    background-color: var(--violet-purple) !important;
+}
+
+span.badge:nth-child(3n + 3){
+    background-color: var(--blu-ligth) !important;
 }
